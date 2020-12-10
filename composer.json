@@ -3,6 +3,7 @@
 	"homepage": "http://github.com/studiopanda-it/db_engine",
 	"type": "library",
 	"license": "MIT",
+	"version": "0.9.0",
 	"authors": [
 	  {
 		"name": "Studio Panda",
