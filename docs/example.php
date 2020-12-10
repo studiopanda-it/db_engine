@@ -1,5 +1,7 @@
 <?php
 
+require_once "vendor/autoload.php";
+
 final class DB extends \StudioPanda\DB_Engine\Mysqli_Db_Engine { // all parameters are optional and have defaults
 
 	protected const
@@ -11,7 +13,7 @@ final class DB extends \StudioPanda\DB_Engine\Mysqli_Db_Engine { // all paramete
 		socket = "/var/mysql/mysql.sock",
 		transport_charset = "utf8",
 		timezone = "Europe/Rome";
-//ok you're ready
+
 }
 
 
