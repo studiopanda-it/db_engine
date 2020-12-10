@@ -2,9 +2,9 @@
 
 namespace StudioPanda;
 
-abstract class Sqlite3_DB_Engine implements StudioPanda\DB_Engine {
+abstract class Sqlite3_DB_Engine implements DB_Engine {
 
-	use StudioPanda\DB_Engine_Utils;
+	use DB_Engine_Utils;
 
 	protected static $connections = [];
 

@@ -2,9 +2,9 @@
 
 namespace StudioPanda;
 
-abstract class Mysqli_DB_Engine implements StudioPanda\DB_Engine {
+abstract class Mysqli_DB_Engine implements DB_Engine {
 
-	use StudioPanda\DB_Engine_Utils;
+	use DB_Engine_Utils;
 
 	protected static $connections = [];
 
