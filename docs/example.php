@@ -11,7 +11,7 @@ final class DB extends \StudioPanda\DB_Engine\Mysqli_Db_Engine { // all paramete
 		socket = "/var/mysql/mysql.sock",
 		transport_charset = "utf8",
 		timezone = "Europe/Rome";
-
+//ok you're ready
 }
 
 
