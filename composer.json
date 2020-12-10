@@ -1,0 +1,19 @@
+{
+	"name": "studiopanda/db_engine",
+	"homepage": "http://github.com/x/y",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+	  {
+		"name": "Studio Panda",
+		"email": "hello@studiopanda.it",
+		"homepage": "https://studiopanda.it"
+	  }
+	],
+	"require": {
+	  "php": ">=7.0.0"
+	},
+	"autoload": {
+	  "psr-4": {"StudioPanda\\": "src/"}
+	}
+  }
