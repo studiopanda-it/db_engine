@@ -2,7 +2,7 @@
 
 require_once "vendor/autoload.php";
 
-final class DB extends \StudioPanda\Mysqli_Db_Engine { // all parameters are optional and have defaults
+final class DB extends \StudioPanda\Mysqli_DB_Engine { // all parameters are optional and have defaults
 
 	protected const
 		host = "localhost",
