@@ -8,6 +8,14 @@ trait DB_Engine_Utils {
 		throw new \Exception("Escape function not implemented for ".get_class().".");
 	}
 
+	static function arrayToAssoc($index, array $array) : array {
+		$return = [];
+		foreach($array as $item) {
+			$return[$item[$index]] = $item;
+		}
+		return $return;
+	}
+
 	static function assocArrayToInsert(array $array) : string {
 		$columns = [];
 		$rows = [];
