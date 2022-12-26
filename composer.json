@@ -5,15 +5,15 @@
 	"license": "MIT",
 	"authors": [
 	  {
-		"name": "Studio Panda",
-		"email": "hello@studiopanda.it",
-		"homepage": "https://studiopanda.it"
-	  }
+			"name": "Studio Panda",
+			"email": "hello@studiopanda.it",
+			"homepage": "https://studiopanda.it"
+		}
 	],
 	"require": {
-	  "php": ">=7.0.0"
+		"php": "7-8"
 	},
 	"autoload": {
-	  "psr-4": {"StudioPanda\\": "src/"}
+		"psr-4": {"StudioPanda\\": "src/"}
 	}
-  }
+}

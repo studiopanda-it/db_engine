@@ -1,3 +1,4 @@
+
 # DB_engine
 ## Convenient and secure PHP interface for mySQL/MariaDB & sqlite databases.
 
@@ -45,6 +46,14 @@ rows		// returns an array containing every row represented as an associative arr
 rowsN		// returns an array containing every row represented as an array
 id			// returns the last insertion id
 ```
-For more information: docs/example.php
 
-TODO: Write documentation for `escape`, `assocArrayToInsert`, `assocArrayToUpdate` and `sanitize`
+Configuration example: docs/example.php
+
+There are some other utility methods:
+```
+escape				// returns a string escaped for the database context
+sanitize			// returns a string sanitized for the database using the same syntax of query
+assocArrayToInsert	// returns a string containing the fields and values of an associative array formatted for an INSERT query
+assocArrayToUpdate	// returns a string containing the fields and values of an associative array formatted for an UPDATE query
+arrayToAssoc		// returns an associative array from an array
+```
