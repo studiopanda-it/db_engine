@@ -71,7 +71,7 @@ abstract class Mysqli_DB_Engine implements DB_Engine {
 	}
 
 	static function value(...$args) {
-		return @reset(@mysqli_fetch_row(self::query($args)));
+		return self::rowN($args)[0] ?? null;
 	}
 
 	static function row(...$args) {
@@ -92,7 +92,7 @@ abstract class Mysqli_DB_Engine implements DB_Engine {
 	}
 
 	static function rows(...$args) {
-		$handler = self::query($args);;
+		$handler = self::query($args);
 		while($rows[] = @mysqli_fetch_assoc($handler));
 		return array_slice($rows, 0, -1);
 	}

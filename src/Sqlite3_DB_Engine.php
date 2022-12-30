@@ -50,7 +50,7 @@ abstract class Sqlite3_DB_Engine implements DB_Engine {
 	}
 
 	static function value(...$args) {
-		return reset(self::query($args)->fetchArray(SQLITE3_NUM));
+		return self::rowN($args)[0] ?? null;
 	}
 
 	static function row(...$args) {
