@@ -27,7 +27,7 @@ abstract class Mysqli_DB_Engine implements DB_Engine {
 			}
 			$settings = [];
 			foreach(self::defaults as $id => $default) {
-				if(defined("$class::$id")) {
+				if(defined("$class::$id") && constant("$class::$id") !== null) {
 					$settings[$id] = constant("$class::$id");
 				} else {
 					$settings[$id] = is_array($default) ? call_user_func_array($default[0], $default[1]) : $default;
